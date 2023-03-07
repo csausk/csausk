@@ -44,5 +44,5 @@ jobs:
         with: 
           token: ${{ secrets.TOKEN }}
           repository-name: CSAUSK/csausk.github.io
-          branch: main
-          folder: .vuepress/dist/
+          branch: prime
+          folder: .
