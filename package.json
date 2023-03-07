@@ -1,0 +1,21 @@
+{
+  "name": "csausk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev . --temp .temp",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build .", 
+    
+    "dev-x": "vuepress dev . --temp .temp",
+    "build-x": "export NODE_OPTIONS=--openssl-legacy-provider && vuepress build ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue-template-compiler": "^2.7.14"
+  }
+}
