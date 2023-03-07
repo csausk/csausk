@@ -43,4 +43,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with: 
           token: ${{ secrets.TOKEN }}
+          repository-name: CSAUSK/CSAUSK
+          branch: main
           folder: .vuepress/dist/
