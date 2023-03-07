@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Curry–Howard Correspondence | CSAUSK</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.e8e4f3a3.css" as="style"><link rel="preload" href="/assets/js/app.5e560837.js" as="script"><link rel="preload" href="/assets/js/2.733019b2.js" as="script"><link rel="preload" href="/assets/js/19.f9d5ad37.js" as="script"><link rel="prefetch" href="/assets/js/10.67583ced.js"><link rel="prefetch" href="/assets/js/11.bead64c2.js"><link rel="prefetch" href="/assets/js/12.9e8958b2.js"><link rel="prefetch" href="/assets/js/13.8541ef63.js"><link rel="prefetch" href="/assets/js/14.d9c2c49e.js"><link rel="prefetch" href="/assets/js/15.de341dc1.js"><link rel="prefetch" href="/assets/js/16.02f44e61.js"><link rel="prefetch" href="/assets/js/17.6d25b0b6.js"><link rel="prefetch" href="/assets/js/18.4fd1f419.js"><link rel="prefetch" href="/assets/js/20.f584152c.js"><link rel="prefetch" href="/assets/js/3.0bd007ff.js"><link rel="prefetch" href="/assets/js/4.d12742be.js"><link rel="prefetch" href="/assets/js/5.216cae74.js"><link rel="prefetch" href="/assets/js/6.2d0a63f8.js"><link rel="prefetch" href="/assets/js/7.54072edd.js"><link rel="prefetch" href="/assets/js/8.74d55ed9.js"><link rel="prefetch" href="/assets/js/9.94282426.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e8e4f3a3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CSAUSK</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docs/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="https://kokic.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docs/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="https://kokic.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Guide</span> <!----></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>References</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/references/perusal.html" class="sidebar-link">Perusal</a></li><li><a href="/docs/references/demangle.html" class="sidebar-link">Demangle</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Views</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/views/curry-howard.html" aria-current="page" class="active sidebar-link">Curry–Howard Correspondence</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/views/curry-howard.html#miscella" class="sidebar-link">Miscella</a></li><li class="sidebar-sub-header"><a href="/docs/views/curry-howard.html#elements" class="sidebar-link">Elements</a></li><li class="sidebar-sub-header"><a href="/docs/views/curry-howard.html#analogy" class="sidebar-link">Analogy</a></li><li class="sidebar-sub-header"><a href="/docs/views/curry-howard.html#inter-universal-teichmuller" class="sidebar-link">Inter-universal Teichmüller</a></li></ul></li><li><a href="/docs/views/closure-magic.html" class="sidebar-link">Closure Magic</a></li><li><a href="/docs/views/java-reflect.html" class="sidebar-link">Java Reflect</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="curry-howard-correspondence"><a href="#curry-howard-correspondence" class="header-anchor">#</a> Curry–Howard Correspondence</h1> <h2 id="miscella"><a href="#miscella" class="header-anchor">#</a> Miscella</h2> <ul><li><p>Propositions as Types (<a href="https://homepages.inf.ed.ac.uk/wadler/papers/propositions-as-types/propositions-as-types.pdf" target="_blank" rel="noopener noreferrer">Philip Wadler's Paper<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>)</p> <ol><li><strong>propositions as types</strong>. for each proposition in the logic there is a corresponding type in the programming language — and vice versa.</li> <li><strong>proofs as programs</strong>. for each proof of a given proposition, there is a program (aka. expression) of the corresponding type — and vice versa.</li> <li><strong>simplification of proofs as evaluation of programs</strong>. for each way to simplify a proof there is a corresponding way to evaluate a program (aka. reduction of expression) — and vice versa.</li></ol></li> <li><p>Howard’s observation</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>      A × B          ≅      A ∧ B
+Cartesian product         Conjunction
+
+      A + B          ≅         A ∨ B
+  Disjoint sum               Disjunction
+
+     A ⊃ B           ≅            A → B
+  Implication                  function space
+
+</code></pre></div><ul><li>Type</li></ul> <div class="language- extra-class"><pre class="language-text"><code>A → B → A × B    ≅    A ⇒ B ⇒ A ∧ B
+</code></pre></div><ul><li><p>Dependent Types: types which are a “function” of the elements of some other type.</p></li> <li><p>Links</p> <ul><li><a href="https://ncatlab.org/nlab/show/relation+between+type+theory+and+category+theory" target="_blank" rel="noopener noreferrer">nLab - relation between type theory and category theory<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul> <h2 id="elements"><a href="#elements" class="header-anchor">#</a> Elements</h2> <h2 id="analogy"><a href="#analogy" class="header-anchor">#</a> Analogy</h2> <h2 id="inter-universal-teichmuller"><a href="#inter-universal-teichmuller" class="header-anchor">#</a> Inter-universal Teichmüller</h2></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/references/demangle.html" class="prev">
+        Demangle
+      </a></span> <span class="next"><a href="/docs/views/closure-magic.html">
+        Closure Magic
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5e560837.js" defer></script><script src="/assets/js/2.733019b2.js" defer></script><script src="/assets/js/19.f9d5ad37.js" defer></script>
+  </body>
+</html>

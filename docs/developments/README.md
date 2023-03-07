@@ -1,4 +1,0 @@
-
-# Developments
-
-docs index.

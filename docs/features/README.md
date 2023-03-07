@@ -1,4 +1,0 @@
-
-# Features
-
-docs index.
