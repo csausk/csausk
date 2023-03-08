@@ -10,7 +10,7 @@
     "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev . --temp .temp",
     "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build .", 
     
-    "dev-x": "vuepress dev . --temp .temp",
+    "dev-x": "export NODE_OPTIONS=--openssl-legacy-provider && vuepress dev . --temp .temp",
     "build-x": "export NODE_OPTIONS=--openssl-legacy-provider && vuepress build ."
   },
   "author": "",
