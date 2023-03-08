@@ -30,7 +30,8 @@ module.exports = {
         collapsable: false,
         children: [
           '/docs/references/perusal', 
-          '/docs/references/demangle',  
+          '/docs/references/demangle', 
+          '/docs/references/credible-ref'
         ]
       },
 
@@ -42,6 +43,7 @@ module.exports = {
           '/docs/views/curry-howard', 
           '/docs/views/closure-magic', 
           '/docs/views/java-reflect', 
+          // '/docs/views/javascript',
         ]
       }
     ]
