@@ -1,0 +1,15 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null">
+
+ <g stroke="null">
+  <title stroke="null">Layer 1</title>
+  <ellipse stroke="#000" stroke-width="30" ry="180" rx="180" id="svg_1" cy="256.00001" cx="255" fill="#fff"/>
+  <path stroke="#000" transform="rotate(135 410.595 130.596)" id="svg_3" d="m307.37256,91.55487l206.44512,0l0,78.08325l-206.44512,0l0,-78.08325z" opacity="undefined" stroke-width="0" fill="#fff"/>
+  <rect stroke="#000" style="vector-effect: non-scaling-stroke;" id="svg_4" height="0" width="2" y="218.4" x="307.39999" fill="#fff"/>
+  <line stroke="#000" style="vector-effect: non-scaling-stroke;" stroke-width="0" id="svg_5" y2="252.4" x2="419.39999" y1="254.4" x1="88.4" fill="none"/>
+  <line transform="rotate(135 301.52 203.873)" stroke="#000" id="svg_10" y2="203.87268" x2="494.89798" y1="203.87268" x1="108.14102" stroke-width="30" fill="none"/>
+  <line transform="rotate(135 99.95 401.55)" stroke="#000" id="svg_11" y2="401.54999" x2="124.19693" y1="401.54999" x1="75.70303" stroke-width="30" fill="none"/>
+  <ellipse id="svg_13" cy="86.8" cx="421.19999" stroke-width="30" stroke="#000" fill="#fff"/>
+  <path transform="rotate(135 383.95 232.05)" stroke="#000" id="svg_16" d="m329.67968,231.05005l108.54057,2" filter="url(#svg_16_blur)" opacity="undefined" stroke-width="30" fill="none"/>
+  <line transform="rotate(135 406.45 283.05)" stroke="#000" id="svg_18" y2="283.04998" x2="440.04868" y1="283.04998" x1="372.85126" stroke-width="30" fill="none"/>
+ </g>
+</svg>
