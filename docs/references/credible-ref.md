@@ -16,6 +16,7 @@
 - [Java SE Specifications](https://docs.oracle.com/javase/specs/index.html)
 
 - [JavaScript Reference - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+  - [ECMAScript® 2023 Language Specification](https://tc39.es/ecma262)
 
 - [Lean 4 Manual](https://leanprover.github.io/lean4/doc)
   - [Functional Programming in Lean](https://leanprover.github.io/functional_programming_in_lean)
@@ -29,6 +30,6 @@
 - [Python 3 Reference](https://docs.python.org/3/reference/index.html)
 
 - [Rust Reference](https://doc.rust-lang.org/reference)
-
+  - [Microsoft - Rust First Steps](https://learn.microsoft.com/zh-cn/training/paths/rust-first-steps/)
 
 
