@@ -17,6 +17,7 @@
 
 - [JavaScript Reference - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
   - [ECMAScript® 2023 Language Specification](https://tc39.es/ecma262)
+  - [TypeScript入門『サバイバルTypeScript』](https://typescriptbook.jp)
 
 - [Lean 4 Manual](https://leanprover.github.io/lean4/doc)
   - [Functional Programming in Lean](https://leanprover.github.io/functional_programming_in_lean)
