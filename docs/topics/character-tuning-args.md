@@ -4,7 +4,7 @@
 ## 复现
 
 ::: tip 影响成品的因素
-高度相似的成品 = 相同的 seed + 相同的 size + 相同的 prompts + 相同的 CFG Scale + 相同的 Sampling 相同的 Denoising strength
+高度相似的成品 = 相同的 seed + 相同的 size + 相同的 prompts + 相同的 CFG Scale + 相同的 Sampling + 相同的 Denoising strength
 :::
 
 - seed & size 影响人物的动作/行为 
