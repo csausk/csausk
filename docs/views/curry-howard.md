@@ -26,6 +26,15 @@ Cartesian product         Conjunction
 A → B → A × B    ≅    A ⇒ B ⇒ A ∧ B
 ```
 
+- Constructor
+```
+A × B → C ≅ A → B → C    (currying)
+    ≅            ≅
+A × B ⊃ C ≅ A ⊃ B ⊃ C
+```
+
+
+
 
 - Dependent Types: types which are a “function” of the elements of some other type.
 
