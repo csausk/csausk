@@ -7,14 +7,13 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev . --temp .temp",
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build .", 
-    
-    "dev-x": "export NODE_OPTIONS=--openssl-legacy-provider && vuepress dev . --temp .temp",
-    "build-x": "export NODE_OPTIONS=--openssl-legacy-provider && vuepress build ."
+    "dev-legacy": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev . --temp .temp",
+    "build-legacy": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build .", 
+    "dev": "vuepress dev . --temp .temp",
+    "build": "vuepress build ."
   },
   "author": "",
-  "license": "ISC",
+  "license": "GPL",
   "dependencies": {
     "vue-template-compiler": "^2.7.14"
   }
