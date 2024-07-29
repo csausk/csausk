@@ -48,5 +48,18 @@ hint: "git config advice.graftFileDeprecated false"
 
 执行 `git filter-branch` 后, 如果只有当前分支, 则直接强推 (`git push --force`), 如果有新的 detached 的分支, 为当前分支新建临时分支, 然后临时分支推送到远程仓库. 结束. 
 
+---
+
+### 附录
+
+#### 关于 ` filter-branch` 的注记
+
+> 让你可以通过重写 <rev-list 选项> 中提到的分支来重写 Git 修订历史, 并对每个修订应用自定义过滤器. 这些过滤器可以修改每棵树 (例如删除文件或在所有文件上运行 perl 重写) 或每个提交的信息. 否则, 所有信息 (包括原始提交时间或合并信息) 都将被保留.
+
+> 该命令只会重写命令行中提到的 positive refs (例如, 如果您传递 a..b, 则只会重写 b). 如果不指定过滤器, 提交将在不做任何改动的情况下重新提交, 这通常不会产生任何影响. 不过, 这在将来补偿某些 Git bug 或类似问题时可能会有用, 因此允许使用这种方法.
+
+> 注意: 此命令尊重 `.git/info/grafts` 文件和 `refs/replace/` 命名空间中的引用. 如果您定义了任何移植物或替换引用, 运行此命令将使其永久生效.
+
+- [git-scm.com/docs/git-filter-branch/zh_HANS-CN](https://git-scm.com/docs/git-filter-branch/zh_HANS-CN)
 
 [^git-philosophy]: 也有人称之为 Git 哲学. 
